@@ -79,7 +79,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === "=") {
-    revdebug.exception(new Error('jsError'));
+      revdebug.exception(new Error('jsError'));
     if (obj.next && obj.operation) {
       return {
         total: operate(obj.total, obj.next, obj.operation),
